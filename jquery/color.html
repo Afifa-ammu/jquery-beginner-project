@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click change color</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h1>The sample pages in jquery</h1>
+    <button id="b1">Red</button>
+    <button id="b2">Blue</button>
+    <button id="b3">Green</button>
+    <script>
+       $("document").ready(function(){
+         $("#b1").click(function(){
+             $("h1").css ("color","red");
+         })
+         $("#b2").click(function(){
+             $("h1").css ("color","Blue");
+         })
+         $("#b3").click(function(){
+             $("h1").css ("color","Green");
+         })
+       })
+
+
+    </script>
+
+</body>
+
+</html>

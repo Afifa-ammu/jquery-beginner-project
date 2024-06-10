@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h1 class="b1">This is a paragraph</h1>
+    <p class="b1">hello world</p>
+    <h2 class="b1">This is coding</h2>
+    <p class="b1">sample program</p>
+    <button id="a">click me</button>
+    <script>
+        $("document").ready(function(){
+           $("#a").click(function(){
+            $(".b1").css("color","red");
+           $(".b1").slideUp();
+           })
+           $("#a").click(function(){
+        
+           $(".b1").slideDown();
+           })
+        })
+    </script>
+</body>
+</html>

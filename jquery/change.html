@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     <style>
+        #box{
+            width: 100px;
+            height: 200px;
+            background-color: aqua;
+            position: relative;
+            
+        }
+     </style>
+</head>
+<body >
+    <input type="button" id="btn" value="click me">
+    <div id="box"></div>
+    <script>
+        $("document").ready(function(){
+            $("#btn").click(function(){
+                $("#box").animate({
+                       width:"200px",
+                       height:"500px",
+                    }).animate({
+                        left:"200px",
+                        backgroundcolor:"blue",
+                    })
+                    .animate({
+                         top:"500px",
+                    })
+
+                
+                    
+        
+
+            })
+        })
+    </script>
+</body>
+</html>

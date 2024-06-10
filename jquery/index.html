@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery remove </title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<style>
+    body{
+        text-align: center;
+    }
+    table{
+        margin-top: 200px;
+        margin-left: 400px;
+        text-align: center;
+
+    }
+    th,td{
+        border: 1px double black;
+        padding: 30px;
+    }
+</style>
+
+
+</head>
+<body>
+    <table>
+        <tr>
+          <th>S.NO</th>
+          <th>NAME</th>
+          <th>EMAIL</th>
+          <th>PASSWORD</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Afifa</td>
+          <td>afifa20cs@gmail.com</td>
+          <td><input type='button' class="btn" value="remove"></td>
+
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Fathima</td>
+          <td>fathima23@gmail.com</td>
+          <td><input type='button' class="btn" value="remove"></td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Anu</td>
+            <td>anu@gmail.com</td>
+            <td><input type='button' class="btn" value="remove"></td>
+  
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Diyana</td>
+            <td>diya@gmail.com</td>
+            <td><input type='button' class="btn" value="remove"></td>
+  
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Dhana</td>
+            <td>dhana@gmail.com</td>
+            <td><input type='button' class="btn" value="remove"></td>
+  
+          </tr>
+      </table>
+      
+
+      
+
+      <script>
+        $("document").ready(function(){
+            $(".btn").click(function(){
+             $(this).parents ("tr").remove();
+            })
+                
+            })
+
+        
+        </script>
+     
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <style>
+    #box{
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+    }
+   </style>
+</head>
+<body>
+   <h1 id="a">HELLO WORLD</h1>
+
+    <button id="btn" >Hide</button>
+    <button id="btn1">Show</button>
+    <button id="btn2">Toggle</button>
+
+
+     
+    <script>
+        $(document).ready(function(){
+        $("#btn").click(function(){
+            $("#a").hide();
+        })
+        $("#btn1").click(function(){
+            $("#a").show();
+        })
+        $("#btn2").click(function(){
+            $("#a").toggle();
+        })
+        
+       
+       
+         
+
+    })
+
+
+    </script>
+</body>
+</html>
